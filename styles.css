@@ -1,0 +1,449 @@
+/* Main Settings */
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #222629;
+}
+
+img
+{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.LinkText
+{
+    color: #86C232;
+    text-decoration: none;
+
+    transition: text-decoration;
+    transition-duration: 500ms;
+}
+
+.LinkText:hover
+{
+    text-decoration: underline;
+}
+
+/* Top Menu */
+
+#DivTopMenu
+{
+    position: sticky;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    filter: drop-shadow(0px 0px 3px);
+    padding-top: 25px;
+    padding-bottom: 25px;   
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 98vw;
+    background-color: #2d3033;
+    border-radius: 10px;
+}
+
+#TMLogo
+{
+    height: 60px;
+    margin-right: 10px;
+}
+
+#TMText
+{
+    font-family: "Heebo", system-ui;
+    font-weight: 800;
+    font-size: clamp(1rem, 1.25vw, 3rem);
+    color: white;
+    margin: 0px;
+    text-align: center;
+    margin-right: auto;
+}
+
+#FirstTMB
+{
+    margin-right: 50px;
+}
+
+.TopMenuButtons
+{
+    font-family: "Heebo", system-ui;
+    font-weight: 300;
+    font-size: clamp(1rem, 0.85vw, 3rem);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color;
+    transition-duration: 500ms;
+}
+
+.TopMenuButtons:hover
+{
+    color: #86C232;
+}
+
+/* Page Title */
+
+#DivTitle
+{
+    position: relative;
+    z-index: 100;
+    margin: 0px;
+}
+
+#MainTitle
+{
+    margin-top: 100px;
+    color: #61892F;
+    font-weight: 900;
+}
+
+#MainSubtitle
+{
+    color: #61892F;
+    font-weight: 900;
+}
+
+.TitleText
+{
+    display: flex;
+    justify-content: center;
+    font-family: "Heebo", system-ui;
+    font-size: clamp(0.5rem, 2.5vw, 3rem);
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    z-index: 100;
+    color: azure;
+}
+
+/* Main Image */
+
+#DivMainImage
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+#ArmaImage1
+{
+    position: relative;
+    top: 0;
+    background-color: #61892F;
+    width: 97vw;
+    border-radius: 10px;
+    opacity: 0.5;
+
+    transition: opacity;
+    transition-duration: 700ms;
+    
+}
+
+#ArmaImage1:hover
+{
+    opacity: 0.85;
+}
+
+#Cutter
+{
+    position: absolute;
+    width: 98vw;
+    top: 0;
+    margin-top: 0;
+    z-index: 2;
+    transform: scaleX(-1);
+}
+
+#Cutter2
+{
+    position: absolute;
+    bottom: 0;
+    width: 98vw;
+    z-index: 3;
+    transform: scaleX(-1);
+}
+
+/* Info N.1 */
+
+.DivInfoLeft
+{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    margin-top: 250px;
+}
+
+#TopDivInfo
+{
+    margin-top: 20px;
+}
+
+#ArmaImage2
+{
+    position: relative;
+    top: 0;
+    background-color: #61892F;
+    width: 35vw;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.5;
+
+    animation: fade-in-image linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50vh;
+
+    transition: opacity;
+    transition-duration: 700ms;
+}
+
+#ArmaImage2:hover
+{
+    opacity: 0.85;
+    
+}
+
+#Cutter3
+{
+    position: absolute;
+    left: 30vw;
+    height: 100%;
+    margin-top: 0;
+    z-index: 2;
+    
+}
+
+.DivTextInfoLeft
+{
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin-right: 20px;
+    height: 100%;
+}
+
+.InfoTitle
+{
+    font-family: "Heebo", system-ui;
+    color: #61892F;
+    font-size: clamp(0.5rem, 2.5vw, 5rem);
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50vh;
+}
+
+.InfoText
+{
+    margin-top: 0;
+    font-family: "Heebo", system-ui;
+    color: azure;
+    width: 50vw;
+    font-size: clamp(0.5rem, 1.25vw, 3rem);
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+    overflow: hidden;
+
+
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50vh;
+}
+
+/* Info N.2 */
+
+.DivInfoRight
+{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-top: 250px;
+}
+
+#ArmaImage3
+{
+    position: relative;
+    top: 0;
+    background-color: #61892F;
+    width: 35vw;
+    border-radius: 10px;
+    opacity: 0.5;
+
+    animation: fade-in-image linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50vh;
+
+    transition: opacity;
+    transition-duration: 700ms;
+}
+
+#ArmaImage3:hover
+{
+    opacity: 0.85;
+}
+
+#Cutter4
+{
+    position: absolute;
+    right: 32vw;
+    height: 101%;
+    z-index: 3;
+    transform: scaleX(-1)
+}
+
+.DivTextInfoRight
+{
+    position: absolute;
+    text-align: right;
+    right: 40vw;
+    margin-top: 0;
+}
+
+/* Info N.3 */
+
+#ArmaImage4
+{
+    position: relative;
+    top: 0;
+    background-color: #61892F;
+    width: 40vw;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.5;
+
+    animation: fade-in-image linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 50vh;
+
+    transition: opacity;
+    transition-duration: 700ms;
+}
+#ArmaImage4:hover
+{
+    opacity: 0.85;
+}
+
+#Cutter5
+{
+    position: absolute;
+    left: 37vw;
+    height: 100%;
+    margin-top: 0;
+    z-index: 2;
+}
+
+/* Info N.4 */
+
+#Cutter6
+{
+    position: absolute;
+    right: 36vw;
+    height: 101%;
+    z-index: 3;
+    transform: scaleX(-1)
+}
+
+.DivTextInfoRightV2
+{
+    position: absolute;
+    text-align: right;
+    right: 43vw;
+    margin-top: 0;
+}
+
+#Line
+{
+    margin-top: 50px;
+    height: 3px;
+    border-radius: 5px;
+    width: 98vw;
+    background-color: #474B4F;
+    z-index: 1000;
+}
+
+/* Links */
+
+#DivLinks
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.LinksTitle
+{
+    font-family: "Heebo", system-ui;
+    color: #61892F;
+    font-size: clamp(0.5rem, 2.5vw, 5rem);
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+#DivDiscord
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#DiscordImg
+{
+    height: 5vh;
+    margin-right: 10px;
+    filter: invert(28%) sepia(8%) saturate(413%) hue-rotate(169deg) brightness(89%) contrast(84%);
+
+    transition: filter;
+    transition-duration: 500ms;
+}
+
+#DiscordImg:hover
+{
+    filter: invert(66%) sepia(65%) saturate(446%) hue-rotate(42deg) brightness(92%) contrast(92%);
+}
+
+#TiktokImg
+{
+    height: 5vh;
+    margin-left: 10px;
+    filter: invert(28%) sepia(8%) saturate(413%) hue-rotate(169deg) brightness(89%) contrast(84%);
+
+    transition: filter;
+    transition-duration: 500ms;
+}
+
+#TiktokImg:hover
+{
+    filter: invert(66%) sepia(65%) saturate(446%) hue-rotate(42deg) brightness(92%) contrast(92%);
+}
+
+/* Animation */
+
+@keyframes fade-in
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fade-in-image
+{
+    from {opacity: 0;}
+    to {opacity: 0.5;}
+}
